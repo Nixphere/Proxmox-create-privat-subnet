@@ -1,5 +1,5 @@
 # Proxmox create privat subnet
-#### This script is for creating a subnet with a local ip address in Proxmox so that vms can communicate with each other without internet.
+#### This script is for creating a subnet with a local ip address in Proxmox so that vms can communicate with each other without an external ip. (WIP!!)
 
 ## How to use 
 Autorun:
