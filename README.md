@@ -19,7 +19,7 @@ Next you need to specify the main interface for your vms (usually this is `vmbr0
 ###### Third specification: <br>
 Next you need to specify a new network interface which does not exist yet (e.g. `vmbr3`) this is needed so that you can assign the network to the VMs and use it in general.<br>
 ##### Last Step
-Now everything necessary is installed and as soon as it is completed you can use the new interface (e.g. `vmbr3`) to specify the ip addresses via DHCP or also statically, but keep in mind that the ip must be correct for static specifications
+Now everything necessary is installed and as soon as it is completed you can use the new interface (e.g. `vmbr3`) to specify the ip addresses via static, but keep in mind that the ip must be correct for static specifications
 
 ## VM IP setup
 For the example I use the IP address 10.69.24.0/24 and vmbr3 <br>
