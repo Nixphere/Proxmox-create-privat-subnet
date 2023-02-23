@@ -52,13 +52,3 @@ iface $newinterface inet static
 
 ## Start interface ##
 ifup $newinterface
-
-## Setup DHCP ##
-apt-get install dnsmasq -y
-systemctl stop systemd-resolved
-systemctl disable systemd-resolved
-echo "# /etc/dnsmasq.d/vnet
-dhcp-range=$ip.20,$ip.200,12h
-dhcp-option=option:dns-server,$ip.2" >> /etc/dnsmasq.d/vnet
-systemctl start dnsmasq
-systemctl enable dnsmasq
